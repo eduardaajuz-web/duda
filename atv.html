@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eduarda Regina Ajuz | Portfólio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .hero-bg {
+      background: linear-gradient(135deg, #0f172a 0%, #164e63 100%);
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.06);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .accent {
+      color: #14b8a6;
+    }
+    .btn-accent {
+      background: linear-gradient(135deg, #14b8a6, #22d3ee);
+    }
+    .section-title {
+      font-size: 3.2rem;
+      line-height: 1.1;
+    }
+    .container {
+      max-width: 720px; /* Deixei mais estreito */
+    }
+  </style>
+</head>
+<body class="bg-zinc-950 text-white overflow-x-hidden">
+
+  <!-- HEADER -->
+  <header class="fixed top-0 w-full z-50 glass">
+    <nav class="max-w-[720px] mx-auto px-6 py-6 flex justify-between items-center">
+      <h1 class="text-3xl font-bold bg-gradient-to-r from-teal-400 to-cyan-400 bg-clip-text text-transparent">
+        Eduarda Ajuz
+      </h1>
+      <div class="flex gap-8 text-sm font-medium">
+        <a href="#sobre" class="hover:text-teal-400 transition-colors">Sobre</a>
+        <a href="#projetos" class="hover:text-teal-400 transition-colors">Projetos</a>
+        <a href="#habilidades" class="hover:text-teal-400 transition-colors">Habilidades</a>
+        <a href="#contato" class="hover:text-teal-400 transition-colors">Contato</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO - Mais estreito -->
+  <section id="hero" class="hero-bg min-h-screen flex items-center pt-20">
+    <div class="container mx-auto px-6 text-center">
+      <div class="mb-6">
+        <span class="inline-block px-5 py-2 bg-teal-400/10 text-teal-400 text-sm font-medium rounded-full border border-teal-400/20">
+          Estudante de Desenvolvimento
+        </span>
+      </div>
+      
+      <h2 class="text-5xl md:text-6xl font-bold leading-tight mb-4">
+        Olá, sou <span class="accent">Eduarda Regina Ajuz</span>
+      </h2>
+      
+      <p class="text-xl text-zinc-300 mb-6">
+        Estudante de Técnico em Desenvolvimento de Sistemas
+      </p>
+      
+      <p class="text-base text-zinc-400">
+        Busco oportunidades para crescer, aprender e contribuir com projetos reais.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mt-10">
+        <a href="#projetos" class="px-10 py-5 btn-accent text-black font-semibold rounded-2xl hover:scale-105 transition-all">
+          Ver Meus Projetos
+        </a>
+        <a href="#contato" class="px-10 py-5 border border-teal-400/60 hover:bg-teal-400/10 rounded-2xl font-semibold">
+          Falar Comigo
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="py-28 bg-zinc-900">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="accent section-title font-bold mb-12">Sobre Mim</h2>
+      <p class="text-lg text-zinc-300 leading-relaxed">
+        Sou estudante do Ensino Médio Técnico em Desenvolvimento de Sistemas no Colégio Kennedy, em Ponta Grossa - PR. 
+        Estou em busca de expandir meus conhecimentos, não apenas na área de tecnologia, mas também em outras áreas que possam contribuir para o meu desenvolvimento pessoal e profissional.
+      </p>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section id="projetos" class="py-28">
+    <div class="container mx-auto px-6">
+      <h2 class="text-center accent section-title font-bold mb-16">Projetos</h2>
+      
+      <div class="max-w-2xl mx-auto">
+        <div class="group bg-zinc-900 rounded-3xl overflow-hidden hover:scale-[1.03] transition-all duration-300 border border-zinc-800 hover:border-teal-400/30">
+          <div class="p-10">
+            <h3 class="text-2xl font-semibold mb-3">1º Tri - Projeto 2</h3>
+            <p class="text-zinc-400 mb-8">Projeto desenvolvido durante o primeiro trimestre do curso técnico.</p>
+            <a href="https://github.com/eduardaajuz-web/1tri-projeto2" target="_blank" 
+               class="text-teal-400 hover:text-teal-300 flex items-center gap-2 text-sm font-medium">
+              <i class="fab fa-github"></i>
+              Ver no GitHub →
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-12">
+        <a href="https://github.com/eduardaajuz-web" target="_blank"
+           class="inline-flex items-center gap-3 bg-zinc-900 hover:bg-zinc-800 px-8 py-4 rounded-2xl text-teal-400 hover:text-teal-300 transition-all border border-teal-400/30">
+          <i class="fab fa-github text-3xl"></i>
+          <span class="font-medium">Ver todos os meus repositórios</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HABILIDADES -->
+  <section id="habilidades" class="py-28 bg-zinc-900">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="accent section-title font-bold mb-16">Habilidades</h2>
+      <div class="grid grid-cols-3 gap-6 max-w-md mx-auto">
+        <div class="glass p-8 rounded-3xl text-center hover:bg-teal-500/10 transition-all">HTML</div>
+        <div class="glass p-8 rounded-3xl text-center hover:bg-teal-500/10 transition-all">JavaScript</div>
+        <div class="glass p-8 rounded-3xl text-center hover:bg-teal-500/10 transition-all">Git & GitHub</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="py-28">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="accent section-title font-bold mb-8">Vamos conversar?</h2>
+      <p class="text-lg text-zinc-400 mb-12">Estou aberta a estágios e novas oportunidades!</p>
+      
+      <div class="flex flex-col gap-6 max-w-md mx-auto">
+        <a href="https://github.com/eduardaajuz-web" target="_blank"
+           class="flex items-center justify-center gap-4 px-8 py-6 bg-zinc-900 hover:bg-zinc-800 rounded-3xl border border-teal-400/30 transition-all">
+          <i class="fab fa-github text-4xl"></i>
+          <div class="text-left">
+            <p class="font-semibold">GitHub</p>
+            <p class="text-sm text-zinc-400">Ver meus projetos</p>
+          </div>
+        </a>
+        
+        <a href="mailto:eduarda.ajuz@escola.pr.gov.br" 
+           class="flex items-center justify-center gap-4 px-8 py-6 btn-accent text-black rounded-3xl transition-all">
+          <i class="fas fa-envelope text-4xl"></i>
+          <div class="text-left">
+            <p class="font-semibold">Enviar E-mail</p>
+            <p class="text-sm">eduarda.ajuz@escola.pr.gov.br</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black py-16 border-t border-white/10">
+    <div class="container mx-auto px-6 text-center text-zinc-500">
+      <p class="mb-6">© 2026 Eduarda Regina Ajuz • Feito com dedicação</p>
+      
+      <div class="flex items-center justify-center gap-3 text-teal-400">
+        <span class="font-medium">Contato:</span>
+        <a href="https://github.com/eduardaajuz-web" target="_blank" 
+           class="hover:underline flex items-center gap-2 hover:text-teal-300 transition-colors">
+          <i class="fab fa-github"></i>
+          <span>https://github.com/eduardaajuz-web</span>
+          <span class="text-white">- Me conheça!</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
